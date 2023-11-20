@@ -1,0 +1,28 @@
+.wrapper{
+    background-color: antiquewhite;
+    height: 100vh;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 100px);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.wrapper div{
+    background-color: skyblue;
+}
+.item1{
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-column: 1/4;
+    
+}
+.item3{
+    grid-column: 2/4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.item6{
+  grid-row: 4/6;
+    grid-column:1/3;
+}
